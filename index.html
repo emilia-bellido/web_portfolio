@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EBC Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha354-sRIl4kxILFvY47J15cr9ZwB07vP4J5+LH7qKQnuqkuIAvNWLzeN5tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha354-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Serif+4:ital,opsz,wght@0,5..50,200..900;1,5..50,200..900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head> 
+
+<body>
+    <main >
+        <!--NAV-->
+        <nav class="navbar navbar-expand-lg bg-transparent fixed-top ">
+            <div class="container-fluid  ">
+                <a class="navbar-brand text-light" href="#hero">EBC</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list text-light fs-1"></i>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center"> <!--ms(margin start: pushes to right)-->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portoflio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#brands">Brands</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--NAV-->
+
+        <!--HERO-------------------->
+        <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center">
+            <p class = " text-light">CONTENT STRATEGIST</p>
+            <div class="hero-box text-center rounded">
+                <div class="hero-text">
+                    <h1 class=" display-4">Developer. <br> Creator. <br> Explorer. </h1>
+                </div>   
+            </div>
+            <a href = #about> 
+                <i class="bi bi-arrow-down-circle fs-1 text-light pt-5"></i>
+            </a>
+        </section>
+        <!--HERO-------------------->
+        <!--ABOUT--------->
+        <section id="about" class="about container-fluid p-0">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-7 ">
+                        <div class="card-body text-center ">
+                            <h5 class="card-title text-light text-center display-1">About </h5>
+                            <p class="card-text text-light text-center fs-6">
+                                My roots are in Ecuador, but having lived on both the East and West coasts of the US and Canada,
+                                I’ve gotten to explore a mix of perspectives.<br>
+                                I love using that experience to connect with people, collaborate, and share stories
+                                through the digital world.
+                                Current <strong>Information Systems student, </strong>
+                                with a creative background in Digital Production & Design.</p>
+                            <a href="#portfolio" class="btn text-center">My Work</a>
+        
+                        </div>
+                    </div>
+                    <div class="col-md-5"> 
+                        <div class="card-video ">
+                            <video src="images/about.mp4" class="object-fit-cover w-100 h-100 rounded d-block" autoplay muted loop></video>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        
+        
+        </section>
+        <!--ABOUT--------->
+
+        <!--RESUME--------->
+        <section id="resume" class = "container mt-5 p-3 rounded"> 
+            <header class="text-opacity-100"> <!--resume header-->
+                <h2 class="display-1 text-light text-center m-0">Emilia Bellido</h2>
+                <div class="details d-flex  align-items-center justify-content-around">
+                    <p class="text-light d-flex  align-items-center justify-content-center">
+                        <i class="bi bi-telephone m-2"></i> 361-234-4555
+                    </p>
+                    <p class="text-light d-flex  align-items-center justify-content-center">
+                        <i class="bi bi-envelope mx-2"></i> socialsebc@gmail.com
+                    </p>
+                </div>
+                <hr class="w-100">
+            </header><!--resume header-->
+
+            <!--EDUCATION-------->
+            <p class=" section-title rounded fs-5 p-1 my-3 w-100 text-center" > Education</p>
+            <div id = "education" class="education-list">
+                <!--EDUCATION BOX 1-->
+                <div class="school-box border-start mb-3">
+                    <div class="d-flex w-100 ps-5 flex-column justify-content-between ">
+                            <h5 class="mb-1 text-light ">Information and Computer Systems Diploma</h5>
+                            <small class ="education-details">Present</small>
+                        <small class = "education-details">Camosun College</small>
+                    </div>
+                </div>
+                <!--EDUCATION BOX 2-->
+                <div class="school-box border-start mb-3">
+                    <div class="d-flex w-100 ps-5 flex-column justify-content-between">
+                            <h5 class="mb-1 text-light ">Digital Production, Writing, and Design Certificate</h5>
+                            <small class ="education-details">2024</small>
+                        <small class = "education-details">Camosun College</small>
+                    </div>
+                </div>
+                <!--EDUCATION BOX 2-->
+                <div class="school-box border-start mb-3">
+                    <div class="d-flex w-100 ps-5 flex-column justify-content-between">
+                            <h5 class="mb-1 text-light ">Diploma in Arts and Sciences</h5>
+                            <small class ="education-details">2023</small>
+                        <small class = "education-details">Miami Dade College</small>
+                    </div>
+                </div>
+            </div> 
+            <!--EDUCATION -->
+                    
+            <p class=" section-title rounded fs-5 p-1 w-100 text-center my-3" >
+            Technical & Digital Skills</p>
+            
+            <!--SKILLS-->
+            <div class = "skill-section ">
+                    <div class="accordion accordion-flush w-100 " id="skillsName">
+                        <div class="accordion-item"> <!--JAVA-->
+                            <h2 class="accordion-header">
+                                <button class="accordion-button skillName collapsed " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <i class="bi bi-check2-circle pe-2"></i>
+                                    Java
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#skillsName">
+                                <div class="accordion-body">
+                                     <div class="progress mb-3 " role="progressbar" aria-label="java" aria-valuenow="45" aria-valuemin="0"
+                                        aria-valuemax="100" style="height: 30px;">
+                                        <div class="progress-bar skills-bar" style="--target-width: 45%">JAVA (OOP) 45% </div>
+                                        <!--targetwidth so the animation can work dependent on the barwidth-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--JAVA-->
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseHtml" aria-expanded="false" aria-controls="flush-collapseHtml">
+                                    <i class="bi bi-filetype-html pe-2"></i> HTML5 / CSS3 / Bootstrap
+                                </button>
+                            </h2>
+                            <div id="flush-collapseHtml" class="accordion-collapse collapse" data-bs-parent="#skillsName">
+                                <div class="accordion-body">
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar skills-bar" role="progressbar" aria-label="HTML Skills" aria-valuenow="50"
+                                            aria-valuemin="0" aria-valuemax="100" style="--target-width: 50%">
+                                            HTML5 / CSS3 / Bootstrap 50%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseAdobe" aria-expanded="false" aria-controls="flush-collapseAdobe">
+                                    <i class="bi bi-palette pe-2"></i>
+                                    Adobe Cloud
+                                </button>
+                            </h2>
+                            <div id="flush-collapseAdobe" class="accordion-collapse collapse" data-bs-parent="#skillsName">
+                                <div class="accordion-body">
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar skills-bar" role="progressbar" aria-label="Adobe" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100" style="--target-width: 70%">
+                                            Adobe Cloud 70%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseCanva" aria-expanded="false" aria-controls="flush-collapseCanva">
+                                    <i class="bi bi-brush pe-2"></i>
+                                    Canva
+                                </button>
+                            </h2>
+                            <div id="flush-collapseCanva" class="accordion-collapse collapse" data-bs-parent="#skillsName">
+                                <div class="accordion-body">
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar skills-bar" role="progressbar" aria-label="Canva" aria-valuenow="70"
+                                            aria-valuemin="0" aria-valuemax="100" style="--target-width: 70%">
+                                            Canva 70%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseCMS" aria-expanded="false" aria-controls="flush-collapseCMS">
+                                    <i class="bi bi-hdd-network pe-2"></i>
+                                    Content Management Systems (CMS)
+                                </button>
+                            </h2>
+                            <div id="flush-collapseCMS" class="accordion-collapse collapse" data-bs-parent="#skillsName">
+                                <div class="accordion-body">
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar skills-bar" role="progressbar" aria-label="CMS" aria-valuenow="50"
+                                            aria-valuemin="0" aria-valuemax="100" style="--target-width: 50%">
+                                            (CMS) 50%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSEO" aria-expanded="false" aria-controls="flush-collapseSEO">
+                                    <i class="bi bi-graph-up pe-2"></i>
+                                    Social Analytics / SEO
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSEO" class="accordion-collapse collapse" data-bs-parent="#skillsName">
+                                <div class="accordion-body">
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar skills-bar" role="progressbar" aria-label="SEO" aria-valuenow="50"
+                                            aria-valuemin="0" aria-valuemax="100" style="--target-width: 50%">
+                                             Social Analytics / SEO 50%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+            </div>
+            <!--SKILLS-->
+
+            <!--EXPERIENCE-->
+            <p class=" section-title rounded fs-5 p-1 w-100 my-3 text-center" >
+            Experience</p>
+            <div id="experience">
+                <div class="experience-box marketing my-3"><!--MARKETING-->
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseAssis" role="button"
+                        aria-expanded="false" aria-controls="collapseAssis">
+                        Marketing and Logistics Assistant
+                    </a>
+                    <div class="collapse" id="collapseAssis">
+                        <div class="card card-body my-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-semibold">Victoria Jazz Society</p>
+                                <small>2025</small>
+                            </div>
+                            <p> • Achieved 10% follower growth in 2 months through a strategic mix of paid promotions
+                                and organic
+                                content initiatives. <br>
+                                • Design and manage visual assets using Adobe tools/Canva, ensuring strict adherence to
+                                brand guidelines across web and print platforms.<br>
+                                • Create high-performing daily photo and video content during
+                                festival season, enhancing digital storytelling and audience engagement.<br>
+                            </p>
+                        </div>
+                </div> <!--MARKETING-->
+                <div class="experience-box media my-3"><!--MEDIA-->
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseHeron" role="button" aria-expanded="false"
+                        aria-controls="collapseHeron">
+                        Heron Media Internship
+                    </a>
+                    <div class="collapse" id="collapseHeron">
+                        <div class="card card-body my-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-semibold">Heron Media – Victoria, BC</p>
+                                <small>June 2025 - Present</small>
+                            </div>
+                            <p>
+                                • Oversee the end-to-end lifecycle of digital content, from conceptualization and graphic design to
+                                deployment.
+                            </p>
+                        </div>
+                    </div>
+                </div><!--MEDIA-->
+                
+                <div class="experience-box admin my-3"> <!--ADMIN-->
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseCG" role="button" aria-expanded="false"
+                        aria-controls="collapseCG">
+                        Administrative and Social Media Intern
+                    </a>
+                    <div class="collapse" id="collapseCG">
+                        <div class="card card-body my-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-semibold">C&G Consulting Service LLC - Miami, FL</p>
+                                <small>Oct 2021 - Jan 2024</small>
+                            </div>
+                            <p>
+                                • Supported internal administrative systems, improving workflow efficiency by 45% through better digital
+                                organization.<br>
+                                • Ensured the company website and social platforms maintained a user-friendly interface (UI),
+                                facilitating a smooth digital journey for clients.<br>
+                                • Monitored performance metrics to drive a 15% increase in online engagement.
+                            </p>
+                        </div>
+                    </div>
+                </div><!--ADMIN-->
+                
+                <div class="experience-box leadership my-3"> <!--LEADERSHIP-->
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseEnactus" role="button" aria-expanded="false"
+                        aria-controls="collapseEnactus">
+                        Enactus Club President
+                    </a>
+                    <div class="collapse" id="collapseEnactus">
+                        <div class="card card-body my-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-semibold">Camosun College – Victoria, BC</p>
+                                <small>Nov 2024 - May 2025</small>
+                            </div>
+                            <p>
+                                • Led team restructuring and strategic planning, managing volunteer resources to execute social impact
+                                projects.<br>
+                                • Directed outreach campaigns across digital channels, improving visibility for student-led
+                                entrepreneurial initiatives.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!--LEADERSHIP-->
+            </div><!--EXPERIENCE-->
+            <div class="download d-flex justify-content-center w-100 my-3">
+                <a href="resume.pdf" download target="_blank" class="btn get-resume w-25">
+                    PDF Version
+                </a>
+            </div>
+            <footer class ="text-opacity-100 mt-2 rounded">
+                
+                <div class="details d-flex gap-3 align-items-center justify-content-center ">
+                    <p class = "text-light m-0"> <i class="bi bi-telephone"></i> 361-234-4555 </p>
+                    <p class = "text-light m-0"> <i class="bi bi-envelope"></i> socialsebc@gmail.com </p>
+
+                </div>
+            </footer>
+        </section>
+        <!--RESUME--------->
+
+        <!--PORTFOLIO---->
+        <section id="portfolio">
+            <h2 class="display-1 text-light text-center py-5">PORTFOLIO</h2>
+        
+            <div class="container-fluid">
+        
+                <div class="row" data-masonry='{"percentPosition": true }'>
+        
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark mb-3">
+                            <img src="images/video1.png" class="card-img" alt="Screenshot of Moments of Light">
+                            <div
+                                class="card-img-overlay overflow-y-auto d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fs-4 fw-bold">Moments of Light</h5>
+        
+                                <div class="badges py-2">
+                                    <span class="badge badge-area">Video Production</span>
+                                    <span class="badge badge-skill">Adobe Premiere Pro</span>
+                                </div>
+        
+                                <p class="card-text fs-6">
+                                    Filmed in Victoria, BC, using a blend of old home footage and personal clips, this
+                                    journalistic reflection on moving offers a narrative
+                                    of resilience.
+                                </p>
+                                <a class="btn" role="button" href="https://www.youtube.com/watch?v=V3anOnvoFTc"
+                                    target="_blank">Watch Video</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark mb-3">
+                            <img src="images/website1.png" class="card-img" alt="Screenshot of Tasty Treats">
+                            <div
+                                class="card-img-overlay overflow-y-auto d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fs-4 fw-bold">Tasty Treats</h5>
+        
+                                <div class="badges py-2">
+                                    <span class="badge badge-area">Web Development</span>
+                                    <span class="badge badge-skill">HTML5 / CSS3</span>
+                                </div>
+        
+                                <p class="card-text fs-6">
+                                    A multi-page site featuring an about section, recipe showcase, and order form. Built to
+                                    precise specifications using semantic HTML and CSS.
+                                </p>
+                                <a class="btn" role="button" href="https://deepblue.camosun.bc.ca/~c0537346/ICS118/lab04/"
+                                    target="_blank">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark mb-3">
+                            <img src="images/calculator.png" class="card-img" alt="Screenshot of Calculator">
+                            <div
+                                class="card-img-overlay overflow-y-auto d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fs-4 fw-bold">Calculator Demo</h5>
+        
+                                <div class="badges py-2">
+                                    <span class="badge badge-area">GUI Programming</span>
+                                    <span class="badge badge-skill">Java</span>
+                                </div>
+        
+                                <p class="card-text fs-6">
+                                    Developed using Java Swing components like JFrame and JPanel, this functional calculator
+                                    application features a custom graphical user interface.
+                                </p>
+                                <a class="btn" role="button" href="images/calculator.png" target="_blank">Full Size</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark mb-3">
+                            <img src="images/video2.png" class="card-img" alt="Screenshot of Second Chance">
+                            <div
+                                class="card-img-overlay overflow-y-auto d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fs-4 fw-bold">Second Chance</h5>
+        
+                                <div class="badges py-2">
+                                    <span class="badge badge-area">Video Production</span>
+                                    <span class="badge badge-skill">Adobe Premiere Pro</span>
+                                </div>
+        
+                                <p class="card-text fs-6">
+                                    A student short-film documentary that provides an eye-opening look at the essential role
+                                    animal shelters play in saving lives.
+                                </p>
+                                <a class="btn" role="button" href="https://www.youtube.com/watch?v=V3anOnvoFTc"
+                                    target="_blank">Watch Video</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark mb-3">
+                            <img src="images/website3.png" class="card-img" alt="Screenshot of Franemiseb">
+                            <div
+                                class="card-img-overlay overflow-y-auto d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fs-4 fw-bold">Franemiseb Wellness</h5>
+        
+                                <div class="badges py-2">
+                                    <span class="badge badge-area">CMS (Wix)</span>
+                                    <span class="badge badge-skill">Brand Identity</span>
+                                </div>
+        
+                                <p class="card-text fs-6">
+                                    I designed a comprehensive brand identity and Wix website, creating custom logos and visuals
+                                    that speak directly to their clients.
+                                </p>
+                                <a class="btn" role="button" href="https://emiliab2004243.wixsite.com/franemiseb"
+                                    target="_blank">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark mb-3">
+                            <img src="images/card1.png" class="card-img" alt="Screenshot of Napoli">
+                            <div
+                                class="card-img-overlay overflow-y-auto d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fs-4 fw-bold">Napoli 1800 Pizzeria</h5>
+        
+                                <div class="badges py-2">
+                                    <span class="badge badge-area">Brand Identity</span>
+                                    <span class="badge badge-skill">Canva | Adobe Suite</span>
+                                </div>
+        
+                                <p class="card-text fs-6">
+                                    I collaborated with designing business cards, newspaper ad banners and wine labels, and
+                                    eventually took on managing social media.
+                                </p>
+                                <a class="btn" role="button"
+                                    href="https://emiliab2004243.wixsite.com/my-site-1/portfolio-collections/brand-design/project-title-5"
+                                    target="_blank">Brand Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark mb-3">
+                            <img src="images/draw1.jpg" class="card-img" alt="Screenshot of Seed to Coffee">
+                            <div
+                                class="card-img-overlay overflow-y-auto d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fs-4 fw-bold">Seed to Coffee</h5>
+        
+                                <div class="badges py-2">
+                                    <span class="badge badge-area">Graphic Design</span>
+                                    <span class="badge badge-skill">Adobe Suite</span>
+                                </div>
+        
+                                <p class="card-text fs-6">
+                                    This infographic illustrates the journey of coffee from seed to cup. Each step is visually
+                                    represented, highlighting the transformation.
+                                </p>
+                                <a class="btn" role="button"
+                                    href="https://emiliab2004243.wixsite.com/my-site-1/portfolio-collections/brand-design/project-title-5"
+                                    target="_blank">Brand Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark mb-3">
+                            <img src="images/website2.png" class="card-img" alt="Screenshot of GiveBack">
+                            <div
+                                class="card-img-overlay overflow-y-auto d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fs-4 fw-bold">GiveBack Global</h5>
+        
+                                <div class="badges py-2">
+                                    <span class="badge badge-area">Responsive Layout</span>
+                                    <span class="badge badge-skill">HTML5 / CSS3</span>
+                                </div>
+        
+                                <p class="card-text fs-6">
+                                    Designed and coded a responsive web interface for a volunteer matching initiative, utilizing
+                                    semantic HTML and CSS.
+                                </p>
+                                <a class="btn" role="button" href="https://deepblue.camosun.bc.ca/~c0537346/ICS118/Midterm/"
+                                    target="_blank">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-4">
+                        <div class="card text-bg-dark mb-3">
+                            <img src="images/photo1.jpg" class="card-img" alt="Screenshot of Aya Huma">
+                            <div
+                                class="card-img-overlay overflow-y-auto d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="card-title fs-4 fw-bold">Aya Huma</h5>
+        
+                                <div class="badges py-2">
+                                    <span class="badge badge-area">Photography</span>
+                                    <span class="badge badge-skill">Lightroom Classic</span>
+                                </div>
+        
+                                <p class="card-text fs-6">
+                                    Using the traditional Ecuadorian symbol of Aya Huma to embody duality, this project
+                                    documents the journey of an outsider.
+                                </p>
+                                <a class="btn" role="button"
+                                    href="https://emiliab2004243.wixsite.com/my-site-1/portfolio-collections/photography/project-title-6"
+                                    target="_blank">Photographic Essay</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section><!--UNIQUE-->
+        <section id="unique" class="position-relative overflow-hidden container rounded-5"> 
+            <div id="title-unique" class = "d-flex justify-content-center align-items-center position-relative z-3 ">
+                <h2 class="display-1 text-center ">Did you know</h2>
+                <i class="bi bi-question text-center py-2" id="question"></i>
+                <p class="text-center py-2">My family and I travelled across the states in 7 days from Miami to Seattle</p>
+            </div>
+
+            
+            <div class="video-bg position-absolute top-0 start-0 w-100 h-100 z-0"> <!--VIDEO BACKGROUND-->
+                <video id="miss" src="images/carousel/miss.mp4" class="bg-layer object-fit-cover w-100 h-100 position-absolute" muted loop autoplay playsinline></video>
+            
+                <video id="vegas" src="images/carousel/vegas.mp4" class="bg-layer object-fit-cover w-100 h-100 position-absolute" muted loop autoplay playsinline></video>
+            
+                <video id="texas" src="images/carousel/texas.mp4" class="bg-layer object-fit-cover w-100 h-100 position-absolute" muted loop autoplay playsinline></video>
+                <video id="firework" src="images/carousel/firework.mp4" class="bg-layer object-fit-cover w-100 h-100 position-absolute" muted loop autoplay playsinline></video>
+            
+            </div>
+            
+            <div id="carousel-trip" class= "carousel slide container carousel-fade  position-relative min-vh-100 d-flex flex-column justify-content-center align-items-center ">
+                <div class="carousel-inner rounded-5">
+
+                    <div class="carousel-item active" id="slide-texas">
+                        <div class="" style="max-width: 800px;">
+                            <img src="images/carousel/texas-2.JPG" class="d-block w-100" alt="Texas highway">
+                            <div class="carousel-caption d-block text-dark" style="bottom: 0;">
+                                <p class="mb-0 fw-bold">Drove for 7 days...</p>
+                                <p class="text-muted"><i class="bi bi-geo"></i> Texas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" id="slide-miss">
+                        <div class="" style="max-width: 800px;">
+                            <img src="images/carousel/tupelo-2.jpg" class="d-block w-100" alt="Family with christmas tree background">
+                            <div class="carousel-caption d-block text-dark" style="bottom: 0;">
+                                <p class="mb-0 fw-bold">Celebrated Xmas at an Applebee´s</p>
+                                <p class="text-muted"><i class="bi bi-geo"></i> Mississippi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" id="slide-vegas">
+                        <div class="" style="max-width: 800px;">
+                            <img src="images/carousel/vegas-2.jpg" class="d-block w-100" alt="Family vegas">
+                            <div class="carousel-caption d-block text-dark" style="bottom: 0;">
+                                <p class="mb-0 fw-bold">Partied a bit...</p>
+                                <p class="text-muted"><i class="bi bi-geo"></i> Las Vegas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" id="slide-artsy">
+                        <div class="" style="max-width: 800px;">
+                            <img src="images/carousel/vegas2-2.jpg" class="d-block w-100" alt="Vegas city landscape">
+                            <div class="carousel-caption d-block text-dark" style="bottom: 0;">
+                                <p class="mb-0 fw-bold">Took artsy photos</p>
+                                <p class="text-muted"><i class="bi bi-geo"></i> Vegas Strip</p>
+                            </div>
+                        </div>
+                    </div>
+                
+        
+        
+        
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-trip" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-trip" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+                
+               
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <!--CONTACT-->
+        <section id="contact" class="container col-10 p-3 rounded my-5">
+            <div class="contact-wrapper row justify-content-around rounded">
+                <div class=" image-wrapper col-md-5 col-lg-4 ">
+                    <div class="image-container position-relative rounded overflow-hidden">
+                        <img src="images/candid4.jpg" class="cup img-fluid rounded w-100" alt="Cup of Tea">
+        
+                        <div class="overlay position-absolute"></div>
+
+                        <h5 class="text-left position-absolute display-1 ps-3">Say </h5> <!--display-1: font size-->
+                        <h5 class="text-right position-absolute display-1 ps-3 ">Hello</h5>
+        
+                    </div>
+        
+
+                </div>
+        
+                <div class="contact-form col-md-7 col-lg-8 text-center  d-flex flex-column justify-content-center "> <!--BORDER END - no border left-->
+                    <div class="info p-3">
+                        <p class = "fs-1 fw-medium  m-0">Contact</p>
+                        <p class = "fw-light  m-0">socialsebc@gmail.com</p>
+                    </div>
+                    <form>
+                        <div class="mb-2 ">
+                            <label for="name" class="form-label border-bottom"></label>
+                            <input type="text" class="form-control border-0 border-bottom rounded-0" id="name"
+                                placeholder="Your Name ">
+                        </div>
+                        <div class="mb-2 ">
+                            <label for="email" class="form-label"></label>
+                            <input type="email" class="form-control border-0 border-bottom rounded-0 " id="email"
+                                placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label"></label>
+                            <textarea class="form-control border-0 border-bottom rounded-0" id="message" rows="1" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn:hover">Say Hi! </button>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center gap-4">
+                        <!--LINKEDIN-->
+                        <a href="https://www.linkedin.com/in/emiliabellido/" class="text-reset">
+                            <!--text-reset: removing default links styling -->
+                            <i class="bi bi-linkedin text-center text-light "></i>
+                        </a>
+        
+                        <!--INSTA-->
+                        <a href="https://www.instagram.com/socialsbyebc/" class="text-reset">
+                        <i class="bi bi-instagram text-center text-light"></i>
+                        </a>
+                    </div>
+                    
+
+
+
+
+
+
+                </div>
+                
+           
+        
+            </div>
+        </section> 
+        <!--CONTACT-->
+        
+
+
+
+
+
+
+        <footer><!--FOOTER-->
+            <div class="footer d-flex justify-content-center align-items-center">
+                <p class = "fw-3 fs-4 py-3 m-0">Copyright &copy; 2025 EBC</p>
+            </div>
+        </footer><!--FOOTER-->
+
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha354-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    </main>
+</body>
+
+</html>

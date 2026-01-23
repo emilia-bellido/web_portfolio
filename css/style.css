@@ -1,0 +1,544 @@
+/**/
+
+/*
+Black: #00060D
+White:  #F2F2F0;
+Cream: #BFBBB4
+Brown: ##73440A
+Clay: #8C6658
+
+
+Body Font: "Inter", sans-serif; 
+     <weight>: Use a value from 100 to 900 
+Display Headings: "Source Serif 4", serif; 
+    <weight>: Use a value from 200 to 900 
+*/
+
+
+:root{
+    --black:   #00060D;  
+    --white:     #F2F2F0;  
+    --cream:    #BFBBB4;  
+    --brown:   #73440A;  
+    --clay:    #8C6658;
+    --transparent: rgba(255, 255, 255, 0.2);
+
+    --bg-body: var(--white);      /* Main page background */
+    --bg-dark: var(--black);    /* Footer / Dark Cards */
+    
+    --text-main: var(--black);    /* Main text color */
+    --text-light: var(--white);      /* Text on dark backgrounds */
+    
+    --primary-btn: var(--brown);    /* Buttons Color */
+    --hover-btn: var(--clay);     /* Button hover color */
+    
+    --border-color: var(--cream);     /* Lines and dividers */
+    
+   
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box; /*padding/border are included within dimensions (it doesnt add)*/
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-optical-sizing: auto;/*font adapts to different sizes of screen */
+    line-height: 1.65;
+    font-size:100%; /*websites font: 16px */
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; /* Resize the background image to cover the*/
+    height: 100vh; /* 100% of window */
+    background-attachment: fixed; /*makes it scrollable*/
+    background-position: 31%; /*so its the in middle of my picture, doesnt show sum else*/
+    
+}
+
+
+@keyframes fade-in {
+    from{
+        opacity : 0;
+
+    }
+
+    to{
+        opacity: 1;
+    }
+
+}
+   
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Source Serif 4", serif;    
+    font-weight: 200;
+} 
+
+img{
+    display: block;
+    max-width: 100%; /*never bigger width than your own container */
+    height: auto; /*calculate height based on width (preserving aspect ratio)*/
+}
+
+
+.btn{
+    background-color: var(--cream) !important;
+    color: var(--bg-dark);
+    font-weight: 300;
+    font-family: "Source Serif 4", serif;
+    transition: 0.5s ease-in-out ;
+}
+
+
+.btn:hover{
+    color: var(--text-light);
+    background-color: var(--bg-dark);
+    
+    transform: translateY(-2px) scale(1.02);
+}
+
+
+section{
+    background-color: transparent !important;
+    animation: fade-in 2s ease-in forwards;
+}
+
+
+
+
+/*NAVBAR*/
+.navbar-nav .nav-link {
+    color: var(--text-light) !important;  
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand:hover{
+    color: var(--white) !important;
+    transform: scale(1.09) translateY(-0.6px);
+    text-shadow: 0px 0px 5px black;
+}
+
+.navbar .navbar-brand{
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    
+    background-color: var(--transparent);
+    border-bottom: 2px solid var(--clay);
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/*NAVBAR*/
+
+
+
+
+
+
+/* HERO */
+#hero{
+
+    height: 100vh; /* 100% of window */
+    
+}
+
+
+#hero .hero-box{
+    width: 100%;
+    height: auto;
+    background-color: rgb(9 4 4 / 45%); /*black transparency */
+    backdrop-filter: blur(6px);
+    color: var(--text-light);
+}
+
+#hero .bi-arrow-down-circle{
+    display: inline-block;
+    animation: arrow 1.9s ease-in-out infinite;
+}
+@keyframes arrow{
+    0%{
+        transform: translateY(0%);
+    }
+
+    50%{
+        transform: translateY(35%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+/* HERO */
+/*ABOUT */
+#about .card{
+    background-color: rgb(0 0 0 / 66%) !important;
+    color: var(--text-main) !important;
+    width: 100%;
+    
+}
+
+
+#about .card-body,
+#about .card-video{
+    border: 2px solid var(--border-color);
+    border-style: outset;
+    border-radius: 33px;
+    margin: 35px
+}
+
+.card-video video{
+    border-radius: 33px;
+}
+
+
+
+/*ABOUT */
+
+/*RESUME*/
+@keyframes fill{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: var(--target-width);
+    }
+}
+
+#resume .skills-bar{
+    animation: fill 1s ease-out forwards; /*forwars makes the style be kept after animation is done */
+}
+
+#resume {
+    background-color: rgb(9 4 4 / 45%) !important; /*black transparency */
+    backdrop-filter: blur(6px);
+}
+#resume hr{
+    height:2px;
+    border-width:0;
+    color:var(--cream);
+    background-color: var(--cream);
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+#resume .section-title{
+    background-color: var(--cream) !important;
+    color: var(--bg-dark);
+    font-weight: 300;
+}
+
+#resume .skills-bar{
+    background-color: var(--clay);
+}
+
+
+#resume .accordion-item {
+    background-color: transparent !important;
+    border-bottom: 2px solid grey;
+}
+
+
+#resume .accordion-button {
+    background-color: var(--transparent) !important;
+    color: var(--text-light) !important;
+    box-shadow: none !important;
+}
+
+
+#education .school-box{
+    height: 100px;
+}
+
+#education .education-details{
+    color: var(--text-light);
+}
+
+#experience .btn{
+    background-color: var(--transparent) !important;
+    color: var(--text-light) !important;
+    width: 100%;
+}
+#experience .get-resume{
+    background-color: var(--cream) !important;
+    color: var(--bg-dark);
+    font-weight: 300;
+}
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PORTFOLIO*/
+
+#portfolio .card-img-overlay {
+    opacity: 0;
+    transition: all 0.3s ease-in-out; 
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+
+/* When hovering the Card, change the Overlay opacity to 1 */
+#portfolio .card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.badge-area{ /*BADGE for skill used*/
+    background-color: var(--clay);
+    color: white;
+    font-weight: 400;
+}
+
+.badge-skill{ /*BADGE for software used*/
+    background-color: var(--cream);
+    color: var(--bg-dark);
+    font-weight: 400;
+
+}
+
+
+
+
+
+
+/*PORTFOLIO*/
+
+
+/*CONTACT */
+
+
+#contact{
+    background-color: rgb(181 182 176 / 64%) !important; 
+    backdrop-filter: blur(6px);
+    border: 4px solid var(--border-color);
+}
+#contact .cup{
+    width: 100%;
+}
+
+#contact .overlay  {
+    width: 100% !important;
+    height: 100%;
+    top: 0 !important;
+    bottom: 0 !important;
+    z-index: 1;
+    background-image: linear-gradient(45deg, black, transparent) !important;
+}
+
+#contact .text-left{
+    z-index: 2;
+    top: 0 !important;
+    bottom: 0 !important;
+    color: white;
+}
+
+#contact .text-right{
+    z-index: 2;
+    top: 61 !important;
+    bottom: 0 !important;
+    color: white;
+    
+}
+
+#contact .bi-linkedin,
+#contact .bi-instagram{
+    font-size: 32px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#contact form input,
+#contact form textarea{
+    background-color: #64646400 !important;
+}
+#contact .bi-linkedin:hover,
+#contact .bi-instagram:hover{
+    
+    color: var(--border-color) !important;
+    animation: rotate 0.4s ease-in infinite;
+}
+
+
+#contact form textarea:focus,
+#contact form input{
+    box-shadow: none;
+    transition: none;
+}
+
+@keyframes rotate{
+    0%{
+        
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(9deg);
+    }
+
+    50%{
+        transform: rotate(-9deg)
+    }
+
+    100%{
+         transform: rotate(0deg);
+    }
+}
+
+
+/*CONTACT */
+
+
+/*UNIQUE */
+
+#carousel-trip{
+    max-width: 27.5rem !important;
+    max-height: 39rem !important;  /* make it floating */
+    
+}
+
+.carousel-inner {
+    height: 50vh;
+}
+
+.carousel-item{
+    height: 100%; 
+}
+
+.carousel-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#unique{
+    background-color: #040303de !important;
+    backdrop-filter: blur(3px);
+}
+
+.carousel-item .carousel-caption{
+    background-color: var(--white);
+    color: var(--brown);
+    width: 100%;
+    right: 0 !important; /* Force it to touch the right edge */
+    left: 0 !important;
+    bottom: 0 !important;
+    padding: 0;
+}
+.carousel-item .carousel-caption p{
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    margin: 0
+
+}
+
+#unique #question{
+    display: inline-block;
+    animation: move-question 3s infinite;
+    font-size: 6rem;
+}
+
+
+@keyframes move-question{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(13deg);
+
+
+    }
+    75%{
+        transform: rotate(-13deg);
+    }
+
+
+    100%{
+         transform: rotate(0deg);
+    }
+}
+
+
+
+#title-unique{
+    background-color: rgb(247 247 247 / 62%);;
+    margin-top:10px;
+    border-radius: 30px;
+    flex-wrap: wrap;
+}
+/*UNIQUE-VDEIOS*/
+
+
+.video-bg video {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out; 
+}
+
+
+#unique:has(#slide-vegas.active) #vegas {
+    opacity: 1 !important;
+}
+
+
+#unique:has(#slide-texas.active) #texas {
+    opacity: 1 !important;
+}
+#unique:has(#slide-miss.active) #miss {
+    opacity: 1 !important;
+}
+
+#unique:has(#slide-artsy.active) #firework {
+    opacity: 1 !important;
+}
+
+
+
+
+
+
+
+
+
+/*UNIQUE */
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+#resume footer{
+    background-color: var(--transparent);
+}
