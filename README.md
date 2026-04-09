@@ -1,6 +1,7 @@
 # EBC Portfolio
 
 A responsive, single-page personal portfolio website designed to showcase projects across web development, graphic design, video production, and content strategy. 
+https://emilia-bellido.github.io/web_portfolio/
 
 ## 🚀 Features
 
